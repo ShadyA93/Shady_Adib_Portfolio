@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
     background: url('https://github.com/ShadyA93/Shady_Adib_Portfolio/blob/main/1_czcdGNhz6jvyxSRvmuxlSQ.gif') no-repeat center center fixed; /* GIF as background */
     background-size: cover; /* Ensures the GIF covers the entire background */
-    color: #fff; /* White text for better contrast */
+    color: #333; /* White text for better contrast */
     line-height: 1.6;
 }
 
