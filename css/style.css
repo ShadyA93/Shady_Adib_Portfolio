@@ -7,13 +7,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: url('background.gif') no-repeat center center fixed; /* Background image (GIF) */
+    background-size: cover; /* Make sure it covers the entire page */
     color: #333;
     line-height: 1.6;
 }
 
 header {
-    background-color: #0073e6;
+    background: rgba(0, 115, 230, 0.8); /* Transparent blue over GIF background */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -43,9 +44,8 @@ nav ul li a:hover {
 .section {
     padding: 40px 20px;
     max-width: 1200px;
-    margin: 0 auto;
-    background-color: white;
-    margin-bottom: 20px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency to show the background */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
