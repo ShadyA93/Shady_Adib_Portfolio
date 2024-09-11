@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
     background: url('https://github.com/ShadyA93/Shady_Adib_Portfolio/blob/main/1_czcdGNhz6jvyxSRvmuxlSQ.gif') no-repeat center center fixed; /* GIF as background */
     background-size: cover; /* Ensures the GIF covers the entire background */
-    color: #333; /* White text for better contrast */
+    color: #333; /* Darker text for readability */
     line-height: 1.6;
 }
 
@@ -24,6 +24,14 @@ header {
     width: 100%; /* Ensures the header takes up the full width */
 }
 
+header h1 {
+    color: #fff; /* Ensure the title is white */
+    font-size: 36px; /* Larger font size for the title */
+    font-weight: bold;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better visibility */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -36,7 +44,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: black; /* Changed the nav link color to black */
     text-decoration: none;
     font-weight: bold;
 }
