@@ -2,7 +2,7 @@
 
 This repository contains the source code for my personal portfolio hosted on GitHub Pages. It showcases my research in Civil Engineering, including Digital Twins, Structural Health Monitoring, and Machine Learning.
 
-You can view the portfolio [here]().
+You can view the portfolio [here](https://shadya93.github.io/Shady_Adib_Portfolio/).
 
 ## Technology Stack
 - **HTML/CSS** for structure and design
