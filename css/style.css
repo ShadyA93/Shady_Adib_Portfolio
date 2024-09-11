@@ -7,17 +7,18 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: url('background.gif') no-repeat center center fixed; /* Background image (GIF) */
-    background-size: cover; /* Make sure it covers the entire page */
-    color: #333;
+    background: url('https://github.com/ShadyA93/Shady_Adib_Portfolio/blob/main/1_czcdGNhz6jvyxSRvmuxlSQ.gif') no-repeat center center fixed; /* GIF as background */
+    background-size: cover; /* Ensures the GIF covers the entire background */
+    color: #fff; /* White text for better contrast */
     line-height: 1.6;
 }
 
 header {
-    background: rgba(0, 115, 230, 0.8); /* Transparent blue over GIF background */
+    background: rgba(0, 115, 230, 0.6); /* Semi-transparent overlay on the header */
     color: white;
     padding: 20px 0;
     text-align: center;
+    backdrop-filter: blur(5px); /* Blurs the background slightly under the header */
 }
 
 nav ul {
@@ -44,10 +45,13 @@ nav ul li a:hover {
 .section {
     padding: 40px 20px;
     max-width: 1200px;
-    margin: 20px auto;
-    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency to show the background */
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white background for better readability */
+    color: #333;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    backdrop-filter: blur(5px); /* Adds a subtle blur to the section background */
 }
 
 h2 {
