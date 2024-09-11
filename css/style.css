@@ -15,10 +15,13 @@ body {
 
 header {
     background: rgba(0, 115, 230, 0.6); /* Semi-transparent overlay on the header */
-    color: black;
+    color: white;
     padding: 20px 0;
     text-align: center;
     backdrop-filter: blur(5px); /* Blurs the background slightly under the header */
+    z-index: 10; /* Ensure the header appears on top of other content */
+    position: relative; /* Helps control z-index stacking */
+    width: 100%; /* Ensures the header takes up the full width */
 }
 
 nav ul {
