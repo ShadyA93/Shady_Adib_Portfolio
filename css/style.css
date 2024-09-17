@@ -7,25 +7,30 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: url('https://github.com/ShadyA93/Shady_Adib_Portfolio/blob/main/1_czcdGNhz6jvyxSRvmuxlSQ.gif') repeat center center fixed;
-    background-size: cover; /* Ensures the GIF covers the entire background */
-    color: #333;
+    color: #333; /* Darker text for readability */
     line-height: 1.6;
-    animation: background-animation 30s infinite linear;
+    position: relative; /* Allows content to layer over the video */
 }
 
-@keyframes background-animation {
-    0% { background-position: 0 0; }
-    100% { background-position: 100% 100%; } 
+/* Background video */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%; /* Ensure the video covers the full width */
+    min-height: 100%; /* Ensure the video covers the full height */
+    z-index: -1; /* Send the video behind all content */
+    object-fit: cover; /* Ensure the video scales properly without stretching */
 }
 
+/* Header styling */
 header {
     background: rgba(0, 115, 230, 0.6); /* Semi-transparent overlay on the header */
     color: white;
     padding: 20px 0;
     text-align: center;
     backdrop-filter: blur(5px); /* Blurs the background slightly under the header */
-    z-index: 10; /* Ensure the header appears on top of other content */
+    z-index: 10; /* Ensure the header appears on top of the video */
     position: relative; /* Helps control z-index stacking */
     width: 100%; /* Ensures the header takes up the full width */
 }
@@ -38,6 +43,7 @@ header h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better visibility */
 }
 
+/* Navigation styling */
 nav ul {
     list-style: none;
     padding: 0;
@@ -59,16 +65,17 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Content section styling */
 .section {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white background for better readability */
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white for readability */
     color: #333;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
-    backdrop-filter: blur(5px); /* Adds a subtle blur to the section background */
+    backdrop-filter: blur(5px); /* Adds subtle blur to section background */
 }
 
 h2 {
@@ -81,6 +88,7 @@ ul {
     margin-left: 20px;
 }
 
+/* Footer styling */
 footer {
     background-color: #0073e6;
     color: white;
