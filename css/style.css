@@ -10,6 +10,7 @@ body {
     color: #fff; /* Lighter text color for readability against the video background */
     line-height: 1.8; /* Slightly increased line-height for better readability */
     position: relative; /* Allows content to layer over the video */
+    background: transparent; /* Ensure background is transparent */
 }
 
 /* Background video */
@@ -21,6 +22,7 @@ body {
     min-height: 100%; /* Ensure the video covers the full height */
     z-index: -1; /* Send the video behind all content */
     object-fit: cover; /* Ensure the video scales properly without stretching */
+    background: transparent; /* Make sure the background is fully transparent */
 }
 
 /* Title Styling */
@@ -31,6 +33,7 @@ body {
     margin-top: 50px;
     margin-bottom: 40px; /* Adds space below the title */
     color: white;  /* Title color */
+    background: transparent; /* Ensure no background is applied */
 }
 
 /* Subtitles (h2) */
@@ -38,12 +41,14 @@ h2 {
     font-size: 48px;  /* Larger font size for subtitles */
     margin-bottom: 20px;
     color: white;
+    background: transparent; /* Ensure no background is applied */
 }
 
 /* Paragraph styling with increased text size and spacing */
 p {
     font-size: 22px; /* Increased font size for body text */
     margin-bottom: 25px; /* Adds more space between paragraphs */
+    background: transparent; /* Ensure no background is applied */
 }
 
 /* Section styling (completely transparent, no background box) */
@@ -52,13 +57,16 @@ section {
     margin: 0 auto;
     padding: 20px;
     z-index: 1; /* Ensures content is on top of the video */
-    background: none; /* Ensure there's no background box */
+    background: transparent; /* Ensure there's no background box */
+    border: none; /* Remove any borders */
+    box-shadow: none; /* Remove any box shadows */
 }
 
 /* Link Styling */
 a {
     color: #0073e6; /* Link color */
     text-decoration: none;
+    background: transparent; /* Ensure no background is applied */
 }
 
 a:hover {
@@ -74,9 +82,11 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
+    background: transparent; /* Ensure the background is transparent */
 }
 
 /* Image styling */
 img {
     margin-top: 10px;
+    background: transparent; /* Ensure no background is applied */
 }
