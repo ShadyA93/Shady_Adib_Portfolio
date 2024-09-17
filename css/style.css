@@ -31,7 +31,6 @@ body {
     margin-top: 50px;
     margin-bottom: 40px; /* Adds space below the title */
     color: white;  /* Title color */
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Larger shadow for better visibility */
 }
 
 /* Subtitles (h2) */
@@ -39,14 +38,12 @@ h2 {
     font-size: 48px;  /* Larger font size for subtitles */
     margin-bottom: 20px;
     color: white;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
 }
 
 /* Paragraph styling with increased text size and spacing */
 p {
     font-size: 22px; /* Increased font size for body text */
     margin-bottom: 25px; /* Adds more space between paragraphs */
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Add stronger shadow for readability */
 }
 
 /* Section styling (completely transparent, no background box) */
