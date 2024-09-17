@@ -110,3 +110,12 @@ a:hover {
 img {
     margin-top: 10px;
 }
+/* Make the title very large */
+.main-title {
+    font-size: 72px;  /* You can adjust this value as needed */
+    font-weight: bold;
+    text-align: center; /* Optional: Center the title */
+    margin-top: 50px;
+    color: white;  /* Adjust color if needed */
+}
+
