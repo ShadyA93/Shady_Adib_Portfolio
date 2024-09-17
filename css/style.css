@@ -6,11 +6,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #fff; /* Lighter text color for readability against the video background */
-    line-height: 1.8; /* Slightly increased line-height for better readability */
-    position: relative; /* Allows content to layer over the video */
-    background: transparent; /* Ensure background is transparent */
+    font-family: 'Times New Roman', Times, serif; /* Using a serif font to match */
+    color: #333; /* Darker color to match the title in the image */
+    line-height: 1.6;
+    position: relative;
+    background: transparent;
 }
 
 /* Background video */
@@ -18,59 +18,57 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    min-width: 100%; /* Ensure the video covers the full width */
-    min-height: 100%; /* Ensure the video covers the full height */
-    z-index: -1; /* Send the video behind all content */
-    object-fit: cover; /* Ensure the video scales properly without stretching */
-    background: transparent; /* Make sure the background is fully transparent */
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    background: transparent;
 }
 
-/* Title Styling */
+/* Main Title Styling (to match the style in the image) */
 .main-title {
-    font-size: 108px;  /* Increased font size for a larger title */
-    font-weight: bold;
-    text-align: center; /* Center the title */
+    font-family: 'Times New Roman', Times, serif; /* Serif font for the title */
+    font-size: 64px; /* Adjust the font size */
+    font-weight: bold; /* Make it bold */
+    text-align: left; /* Left align the text */
     margin-top: 50px;
-    margin-bottom: 40px; /* Adds space below the title */
-    color: white;  /* Title color */
-    background: transparent; /* Ensure no background is applied */
+    margin-bottom: 10px;
+    color: #333;  /* Darker text color like the image */
 }
 
-/* Subtitles (h2) */
-h2 {
-    font-size: 48px;  /* Larger font size for subtitles */
-    margin-bottom: 20px;
-    color: white;
-    background: transparent; /* Ensure no background is applied */
+/* Subheading Styling (Smaller italic text below the main title) */
+.subheading {
+    font-family: 'Times New Roman', Times, serif; /* Same serif font */
+    font-size: 24px; /* Smaller font size for the subheading */
+    font-style: italic; /* Make the subheading italic */
+    text-align: left; /* Left align */
+    margin-bottom: 30px; /* Adds space after the subheading */
+    color: #333; /* Match the text color with the main title */
 }
 
 /* Paragraph styling with increased text size and spacing */
 p {
     font-size: 22px; /* Increased font size for body text */
-    margin-bottom: 25px; /* Adds more space between paragraphs */
-    background: transparent; /* Ensure no background is applied */
+    margin-bottom: 25px;
 }
 
-/* Section styling (completely transparent, no background box) */
+/* Section styling */
 section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    z-index: 1; /* Ensures content is on top of the video */
-    background: transparent; /* Ensure there's no background box */
-    border: none; /* Remove any borders */
-    box-shadow: none; /* Remove any box shadows */
+    z-index: 1;
+    background: transparent;
 }
 
 /* Link Styling */
 a {
-    color: #0073e6; /* Link color */
+    color: #0073e6;
     text-decoration: none;
-    background: transparent; /* Ensure no background is applied */
 }
 
 a:hover {
-    text-decoration: underline; /* Underline link on hover */
+    text-decoration: underline;
 }
 
 /* Footer styling */
@@ -82,11 +80,10 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
-    background: transparent; /* Ensure the background is transparent */
 }
 
 /* Image styling */
 img {
     margin-top: 10px;
-    background: transparent; /* Ensure no background is applied */
+    background: transparent;
 }
