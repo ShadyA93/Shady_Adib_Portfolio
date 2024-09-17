@@ -110,17 +110,19 @@ a:hover {
 img {
     margin-top: 10px;
 }
-/* Make the title very large */
+/* Title Styling */
 .main-title {
-    font-size: 96px;  /* Increased font size */
+    font-size: 96px;  /* Increased font size for a larger title */
     font-weight: bold;
-    text-align: center; /* Centers the title */
+    text-align: center; /* Center the title */
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Adds space below the title */
     color: white;  /* Title color */
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Enhance visibility with a stronger shadow */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Adds a shadow for better visibility */
 }
+/* Paragraph spacing */
 p {
-    margin-bottom: 20px; /* Adjust the value to control the amount of space */
+    margin-bottom: 20px; /* Adds space between paragraphs */
 }
+
 
