@@ -7,10 +7,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: url('https://github.com/ShadyA93/Shady_Adib_Portfolio/blob/main/1_czcdGNhz6jvyxSRvmuxlSQ.gif') no-repeat center center fixed; /* GIF as background */
-    background-size: cover; /* Ensures the GIF covers the entire background */
+    background: url('https://github.com/ShadyA93/Shady_Adib_Portfolio/blob/main/1_czcdGNhz6jvyxSRvmuxlSQ.gif') repeat center center fixed; /* GIF repeats as background */
+    background-size: contain; /* Scales the GIF to fit in the viewport without stretching */
     color: #333; /* Darker text for readability */
     line-height: 1.6;
+    animation: background-animation 10s infinite linear; /* Add a smooth animation */
+}
+
+@keyframes background-animation {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; } /* Animates the background to move smoothly */
 }
 
 header {
