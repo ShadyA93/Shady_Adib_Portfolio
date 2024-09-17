@@ -112,10 +112,12 @@ img {
 }
 /* Make the title very large */
 .main-title {
-    font-size: 72px;  /* You can adjust this value as needed */
+    font-size: 96px;  /* Increased font size */
     font-weight: bold;
-    text-align: center; /* Optional: Center the title */
+    text-align: center; /* Centers the title */
     margin-top: 50px;
-    color: white;  /* Adjust color if needed */
+    margin-bottom: 20px;
+    color: white;  /* Title color */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Enhance visibility with a stronger shadow */
 }
 
