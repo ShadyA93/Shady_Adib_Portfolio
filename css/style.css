@@ -10,8 +10,8 @@ body {
     line-height: 1.6;
     position: relative;
     font-size: 20px;
-    background: #000; /* Default background is black */
-    color: #fff; /* Default text color set to white */
+    background: #fff; /* Default background for light mode */
+    color: #000; /* Default text color set to black */
 }
 
 /* Background video */
@@ -34,7 +34,7 @@ body {
     text-align: left;
     margin-top: 50px;
     margin-bottom: 10px;
-    color: #fff; /* Set text color to white */
+    color: #000; /* Set text color to black */
 }
 
 /* Subheading Styling */
@@ -44,27 +44,27 @@ body {
     font-style: italic;
     text-align: left;
     margin-bottom: 30px;
-    color: #fff; /* Set text color to white */
+    color: #000; /* Set text color to black */
 }
 
 /* Paragraph styling */
 p {
     font-size: 24px;
     margin-bottom: 25px;
-    color: #fff; /* Set text color to white */
+    color: #000; /* Set text color to black */
 }
 
 /* List Item Styling */
 li {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #fff; /* Set text color to white */
+    color: #000; /* Set text color to black */
 }
 
 /* Customize bullet size using ::marker */
 li::marker {
     font-size: 36px;
-    color: #fff; /* Change bullet color to white */
+    color: #0073e6; /* Optional: Change bullet color */
 }
 
 /* Section styling */
@@ -78,7 +78,7 @@ section {
 
 /* Link Styling */
 a {
-    color: #fff; /* Set link color to white */
+    color: #0073e6; /* Keep link color distinct */
     text-decoration: none;
 }
 
@@ -88,7 +88,7 @@ a:hover {
 
 /* Footer styling */
 footer {
-    background-color: #333;
+    background-color: #0073e6;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -160,11 +160,11 @@ img {
 @media (prefers-color-scheme: light) {
     body {
         background-color: white;
-        color: #fff !important; /* Force text to be white in light mode */
+        color: #000 !important; /* Ensure text is black in light mode */
     }
 
     .main-title, .subheading, p, li, a {
-        color: #fff !important; /* Ensure text remains white */
+        color: #000 !important; /* Ensure text remains black */
     }
 }
 
@@ -172,15 +172,15 @@ img {
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #121212;
-        color: #fff !important; /* Ensure text is white in dark mode */
+        color: #000 !important; /* Ensure text is black in dark mode */
     }
 
     .main-title, .subheading, p, li, a {
-        color: #fff !important; /* Ensure text remains white */
+        color: #000 !important; /* Ensure text remains black */
     }
 
     footer {
         background-color: #333;
-        color: #fff !important; /* Ensure footer text remains white */
+        color: #000 !important; /* Ensure footer text remains black */
     }
 }
