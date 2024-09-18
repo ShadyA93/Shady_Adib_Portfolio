@@ -6,12 +6,12 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif; /* Using a serif font to match */
-    color: #333; /* Darker color to match the title in the image */
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
     position: relative;
-    font-size: 20px; /* Increase base font size for the body text */
-    background: transparent;
+    font-size: 20px;
+    background: white;
+    color: #333;
 }
 
 /* Background video */
@@ -26,42 +26,43 @@ body {
     background: transparent;
 }
 
-/* Main Title Styling (to match the style in the image) */
+/* Main Title Styling */
 .main-title {
-    font-family: 'Times New Roman', Times, serif; /* Serif font for the title */
-    font-size: 64px; /* Adjust the font size */
-    font-weight: bold; /* Make it bold */
-    text-align: left; /* Left align the text */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: left;
     margin-top: 50px;
     margin-bottom: 10px;
-    color: #333;  /* Darker text color like the image */
+    color: #333;
 }
 
-/* Subheading Styling (Smaller italic text below the main title) */
+/* Subheading Styling */
 .subheading {
-    font-family: 'Times New Roman', Times, serif; /* Same serif font */
-    font-size: 30px; /* Smaller font size for the subheading */
-    font-style: italic; /* Make the subheading italic */
-    text-align: left; /* Left align */
-    margin-bottom: 30px; /* Adds space after the subheading */
-    color: #333; /* Match the text color with the main title */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #333;
 }
 
-/* Paragraph styling with increased text size and spacing */
+/* Paragraph styling */
 p {
-    font-size: 24px; /* Increased font size for body text */
+    font-size: 24px;
     margin-bottom: 25px;
 }
+
 /* List Item Styling */
 li {
-    font-size: 24px; /* Increase the text size of list items */
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 /* Customize bullet size using ::marker */
 li::marker {
-    font-size: 36px; /* Increase only the bullet size */
-    color: #0073e6; /* Optional: Change bullet color */
+    font-size: 36px;
+    color: #0073e6;
 }
 
 /* Section styling */
@@ -99,6 +100,7 @@ img {
     margin-top: 10px;
     background: transparent;
 }
+
 /* Mobile and Tablet View */
 @media screen and (max-width: 768px) {
     body {
@@ -149,5 +151,51 @@ img {
     h1, h2, h3 {
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+}
+
+/* Light Mode Styling */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: #333;
+    }
+
+    .main-title, .subheading, p, li {
+        color: #333;
+    }
+
+    li::marker {
+        color: #0073e6;
+    }
+
+    footer {
+        background-color: #0073e6;
+        color: white;
+    }
+}
+
+/* Dark Mode Styling */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    .main-title, .subheading, p, li {
+        color: #e0e0e0;
+    }
+
+    li::marker {
+        color: #bb86fc; /* Example color for dark mode bullets */
+    }
+
+    a {
+        color: #bb86fc; /* Example link color for dark mode */
+    }
+
+    footer {
+        background-color: #333;
+        color: #e0e0e0;
     }
 }
