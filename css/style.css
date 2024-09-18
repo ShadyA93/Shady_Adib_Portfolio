@@ -11,7 +11,7 @@ body {
     position: relative;
     font-size: 20px;
     background: white;
-    color: #333;
+    color: #000; /* Set text color to black */
 }
 
 /* Background video */
@@ -34,7 +34,7 @@ body {
     text-align: left;
     margin-top: 50px;
     margin-bottom: 10px;
-    color: #333;
+    color: #000; /* Set text color to black */
 }
 
 /* Subheading Styling */
@@ -44,25 +44,27 @@ body {
     font-style: italic;
     text-align: left;
     margin-bottom: 30px;
-    color: #333;
+    color: #000; /* Set text color to black */
 }
 
 /* Paragraph styling */
 p {
     font-size: 24px;
     margin-bottom: 25px;
+    color: #000; /* Set text color to black */
 }
 
 /* List Item Styling */
 li {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #000; /* Set text color to black */
 }
 
 /* Customize bullet size using ::marker */
 li::marker {
     font-size: 36px;
-    color: #0073e6;
+    color: #0073e6; /* Optional: Change bullet color */
 }
 
 /* Section styling */
@@ -158,11 +160,11 @@ img {
 @media (prefers-color-scheme: light) {
     body {
         background-color: white;
-        color: #333;
+        color: #000; /* Ensure text is black */
     }
 
     .main-title, .subheading, p, li {
-        color: #333;
+        color: #000; /* Ensure text is black */
     }
 
     li::marker {
@@ -179,19 +181,19 @@ img {
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #121212;
-        color: #e0e0e0;
+        color: #000; /* Ensure text is black */
     }
 
     .main-title, .subheading, p, li {
-        color: #e0e0e0;
+        color: #000; /* Ensure text is black */
     }
 
     li::marker {
-        color: #bb86fc; /* Example color for dark mode bullets */
+        color: #0073e6;
     }
 
     a {
-        color: #bb86fc; /* Example link color for dark mode */
+        color: #0073e6;
     }
 
     footer {
