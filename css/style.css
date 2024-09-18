@@ -11,12 +11,7 @@ body {
     position: relative;
     font-size: 20px;
     background: white; /* Default background */
-    color: #000; /* Default text color set to black */
-}
-
-/* Ensure explicit color for all text elements */
-.main-title, .subheading, p, li, a, footer {
-    color: #000 !important; /* Force all text elements to be black */
+    color: #000; /* Default text color set to black for light mode */
 }
 
 /* Background video */
@@ -39,7 +34,7 @@ body {
     text-align: left;
     margin-top: 50px;
     margin-bottom: 10px;
-    color: #000; /* Set text color to black */
+    color: #000; /* Set text color to black for light mode */
 }
 
 /* Subheading Styling */
@@ -49,21 +44,21 @@ body {
     font-style: italic;
     text-align: left;
     margin-bottom: 30px;
-    color: #000; /* Set text color to black */
+    color: #000; /* Set text color to black for light mode */
 }
 
 /* Paragraph styling */
 p {
     font-size: 24px;
     margin-bottom: 25px;
-    color: #000; /* Set text color to black */
+    color: #000; /* Set text color to black for light mode */
 }
 
 /* List Item Styling */
 li {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #000; /* Set text color to black */
+    color: #000; /* Set text color to black for light mode */
 }
 
 /* Customize bullet size using ::marker */
@@ -165,11 +160,11 @@ img {
 @media (prefers-color-scheme: light) {
     body {
         background-color: white;
-        color: #000 !important; /* Ensure text is black in light mode */
+        color: #000; /* Ensure text is black in light mode */
     }
 
     .main-title, .subheading, p, li, a {
-        color: #000 !important; /* Ensure text remains black */
+        color: #000; /* Ensure text remains black */
     }
 }
 
@@ -177,15 +172,15 @@ img {
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #121212;
-        color: #000 !important; /* Ensure text is black in dark mode */
+        color: #fff; /* Set text color to white in dark mode */
     }
 
     .main-title, .subheading, p, li, a {
-        color: #000 !important; /* Force text to stay black */
+        color: #fff; /* Ensure text is white in dark mode */
     }
 
     a {
-        color: #0073e6; /* Maintain distinct link color in dark mode */
+        color: #bb86fc; /* Optional: Customize link color in dark mode */
     }
 
     footer {
