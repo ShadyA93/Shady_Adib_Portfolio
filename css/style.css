@@ -6,12 +6,12 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif; /* Using a serif font to match */
+    color: #333; /* Darker color to match the title in the image */
     line-height: 1.6;
     position: relative;
-    font-size: 20px;
-    background: #fff; /* Default background for light mode */
-    color: #000; /* Default text color set to black */
+    font-size: 20px; /* Increase base font size for the body text */
+    background: transparent;
 }
 
 /* Background video */
@@ -26,44 +26,41 @@ body {
     background: transparent;
 }
 
-/* Main Title Styling */
+/* Main Title Styling (to match the style in the image) */
 .main-title {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 64px;
-    font-weight: bold;
-    text-align: left;
+    font-family: 'Times New Roman', Times, serif; /* Serif font for the title */
+    font-size: 64px; /* Adjust the font size */
+    font-weight: bold; /* Make it bold */
+    text-align: left; /* Left align the text */
     margin-top: 50px;
     margin-bottom: 10px;
-    color: #000; /* Set text color to black */
+    color: #333;  /* Darker text color like the image */
 }
 
-/* Subheading Styling */
+/* Subheading Styling (Smaller italic text below the main title) */
 .subheading {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-style: italic;
-    text-align: left;
-    margin-bottom: 30px;
-    color: #000; /* Set text color to black */
+    font-family: 'Times New Roman', Times, serif; /* Same serif font */
+    font-size: 30px; /* Smaller font size for the subheading */
+    font-style: italic; /* Make the subheading italic */
+    text-align: left; /* Left align */
+    margin-bottom: 30px; /* Adds space after the subheading */
+    color: #333; /* Match the text color with the main title */
 }
 
-/* Paragraph styling */
+/* Paragraph styling with increased text size and spacing */
 p {
-    font-size: 24px;
+    font-size: 24px; /* Increased font size for body text */
     margin-bottom: 25px;
-    color: #000; /* Set text color to black */
 }
-
 /* List Item Styling */
 li {
-    font-size: 24px;
+    font-size: 24px; /* Increase the text size of list items */
     margin-bottom: 10px;
-    color: #000; /* Set text color to black */
 }
 
 /* Customize bullet size using ::marker */
 li::marker {
-    font-size: 36px;
+    font-size: 36px; /* Increase only the bullet size */
     color: #0073e6; /* Optional: Change bullet color */
 }
 
@@ -78,7 +75,7 @@ section {
 
 /* Link Styling */
 a {
-    color: #0073e6; /* Keep link color distinct */
+    color: #0073e6;
     text-decoration: none;
 }
 
@@ -102,7 +99,6 @@ img {
     margin-top: 10px;
     background: transparent;
 }
-
 /* Mobile and Tablet View */
 @media screen and (max-width: 768px) {
     body {
@@ -153,34 +149,5 @@ img {
     h1, h2, h3 {
         margin-top: 15px;
         margin-bottom: 15px;
-    }
-}
-
-/* Light Mode Styling */
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: white;
-        color: #000 !important; /* Ensure text is black in light mode */
-    }
-
-    .main-title, .subheading, p, li, a {
-        color: #000 !important; /* Ensure text remains black */
-    }
-}
-
-/* Dark Mode Styling */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #121212;
-        color: #000 !important; /* Ensure text is black in dark mode */
-    }
-
-    .main-title, .subheading, p, li, a {
-        color: #000 !important; /* Ensure text remains black */
-    }
-
-    footer {
-        background-color: #333;
-        color: #000 !important; /* Ensure footer text remains black */
     }
 }
