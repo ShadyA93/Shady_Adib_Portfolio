@@ -10,8 +10,8 @@ body {
     line-height: 1.6;
     position: relative;
     font-size: 20px;
-    background: white; /* Default background */
-    color: #000; /* Default text color set to black for light mode */
+    background: #000; /* Default background is black */
+    color: #fff; /* Default text color set to white */
 }
 
 /* Background video */
@@ -34,7 +34,7 @@ body {
     text-align: left;
     margin-top: 50px;
     margin-bottom: 10px;
-    color: #000; /* Set text color to black for light mode */
+    color: #fff; /* Set text color to white */
 }
 
 /* Subheading Styling */
@@ -44,27 +44,27 @@ body {
     font-style: italic;
     text-align: left;
     margin-bottom: 30px;
-    color: #000; /* Set text color to black for light mode */
+    color: #fff; /* Set text color to white */
 }
 
 /* Paragraph styling */
 p {
     font-size: 24px;
     margin-bottom: 25px;
-    color: #000; /* Set text color to black for light mode */
+    color: #fff; /* Set text color to white */
 }
 
 /* List Item Styling */
 li {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #000; /* Set text color to black for light mode */
+    color: #fff; /* Set text color to white */
 }
 
 /* Customize bullet size using ::marker */
 li::marker {
     font-size: 36px;
-    color: #0073e6; /* Optional: Change bullet color */
+    color: #fff; /* Change bullet color to white */
 }
 
 /* Section styling */
@@ -78,7 +78,7 @@ section {
 
 /* Link Styling */
 a {
-    color: #0073e6; /* Keep link color distinct */
+    color: #fff; /* Set link color to white */
     text-decoration: none;
 }
 
@@ -88,7 +88,7 @@ a:hover {
 
 /* Footer styling */
 footer {
-    background-color: #0073e6;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -160,11 +160,11 @@ img {
 @media (prefers-color-scheme: light) {
     body {
         background-color: white;
-        color: #000; /* Ensure text is black in light mode */
+        color: #fff !important; /* Force text to be white in light mode */
     }
 
     .main-title, .subheading, p, li, a {
-        color: #000; /* Ensure text remains black */
+        color: #fff !important; /* Ensure text remains white */
     }
 }
 
@@ -172,19 +172,15 @@ img {
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #121212;
-        color: #fff; /* Set text color to white in dark mode */
+        color: #fff !important; /* Ensure text is white in dark mode */
     }
 
     .main-title, .subheading, p, li, a {
-        color: #fff; /* Ensure text is white in dark mode */
-    }
-
-    a {
-        color: #bb86fc; /* Optional: Customize link color in dark mode */
+        color: #fff !important; /* Ensure text remains white */
     }
 
     footer {
         background-color: #333;
-        color: #e0e0e0;
+        color: #fff !important; /* Ensure footer text remains white */
     }
 }
