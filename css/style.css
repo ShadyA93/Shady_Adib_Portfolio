@@ -99,3 +99,55 @@ img {
     margin-top: 10px;
     background: transparent;
 }
+/* Mobile and Tablet View */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .main-title {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .subheading {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    section {
+        padding: 15px;
+        width: 100%;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    li::marker {
+        font-size: 28px;
+    }
+
+    footer {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1, h2, h3 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
