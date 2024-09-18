@@ -52,15 +52,15 @@ p {
     font-size: 24px; /* Increased font size for body text */
     margin-bottom: 25px;
 }
-/* List Item Styling with Larger Bullet Points */
+/* List Item Styling */
 li {
-    font-size: 24px; /* Increase text and bullet size */
+    font-size: 24px; /* Increase the text size of list items */
     margin-bottom: 10px;
 }
 
 /* Customize bullet size using ::marker */
 li::marker {
-    font-size: 30px; /* Increase only the bullet size */
+    font-size: 36px; /* Increase only the bullet size */
     color: #0073e6; /* Optional: Change bullet color */
 }
 
