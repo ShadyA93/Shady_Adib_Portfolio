@@ -14,15 +14,39 @@
         <source src="Untitled (1).mp4" type="video/mp4">
     </video>
     
-    <!-- Background Music -->
-<audio id="bg-music" loop>
+    <audio id="bg-music" autoplay loop>
     <source src="Background.mp3" type="audio/mp3">
     <source src="Background.ogg" type="audio/ogg">
     Your browser does not support the audio element.
 </audio>
 
-<button onclick="document.getElementById('bg-music').play()">Play Background Music</button>
+<div id="play-notification" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.7); color: white; display: flex; justify-content: center; align-items: center; font-size: 24px;">
+    Click or tap to play background music
+</div>
 
+<script>
+    function playBackgroundMusic() {
+        var bgMusic = document.getElementById('bg-music');
+        bgMusic.play().catch(function() {
+            // Music couldn't autoplay because of browser restrictions, so show notification
+            document.getElementById('play-notification').style.display = 'flex';
+        });
+    }
+
+    window.onload = function() {
+        playBackgroundMusic();  // Attempt to autoplay on page load
+    };
+
+    // Add event listener in case user interacts later
+    window.addEventListener('click', function() {
+        document.getElementById('bg-music').play();
+        document.getElementById('play-notification').style.display = 'none';
+    });
+    window.addEventListener('touchstart', function() {
+        document.getElementById('bg-music').play();
+        document.getElementById('play-notification').style.display = 'none';
+    });
+</script>
     
     <!-- Placeholder for the Header -->
     <div id="header-placeholder"></div>
