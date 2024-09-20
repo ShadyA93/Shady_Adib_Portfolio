@@ -7,25 +7,52 @@
         <!-- Link to the CSS file -->
     <link rel="stylesheet" href="css/style.css">
     
+    <style>
+        /* Style for the Play Music button */
+        #play-music-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #play-music-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <!-- Background Video -->
+    <video autoplay muted loop id="bg-video">
+        <source src="Untitled (1).mp4" type="video/mp4">
+    </video>
+
+    <!-- Background Music -->
     <audio id="bg-music" loop>
-    <source src="Background.mp3" type="audio/mp3">
-    <source src="Background.ogg" type="audio/ogg">
-    Your browser does not support the audio element.
-</audio>
+        <source src="Background.mp3" type="audio/mp3">
+        <source src="Background.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
 
-<div id="play-notification" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.7); color: white; display: flex; justify-content: center; align-items: center; font-size: 24px;">
-    Click or tap to start background music
-</div>
+    <!-- Play Music Button -->
+    <button id="play-music-btn" onclick="playBackgroundMusic()">Play Music</button>
 
-<script>
-    document.getElementById('play-notification').addEventListener('click', function() {
-        document.getElementById('bg-music').play();
-        document.getElementById('play-notification').style.display = 'none';
-    });
-</script>
+    <!-- JavaScript to play the music when the button is clicked -->
+    <script>
+        function playBackgroundMusic() {
+            var bgMusic = document.getElementById('bg-music');
+            bgMusic.play().catch(function(error) {
+                console.error('Autoplay is blocked:', error);
+            });
+        }
+    </script>
+    
     
     <!-- Placeholder for the Header -->
     <div id="header-placeholder"></div>
