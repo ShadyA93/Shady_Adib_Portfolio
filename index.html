@@ -22,7 +22,11 @@
 </audio>
 
 <script>
-    window.addEventListener('click', function() {
+    window.addEventListener('mousemove', function() {
+        document.getElementById('bg-music').play();
+    });
+
+    window.addEventListener('touchstart', function() {
         document.getElementById('bg-music').play();
     });
 </script>
