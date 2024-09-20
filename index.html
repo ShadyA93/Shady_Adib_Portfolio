@@ -19,6 +19,12 @@
         <source src="Background.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
+    <script>
+        // Play the music once the user interacts with the page (e.g., clicks anywhere)
+        window.addEventListener('click', function() {
+            document.getElementById('bg-music').play();
+        });
+    </script>
     <!-- Placeholder for the Header -->
     <div id="header-placeholder"></div>
 
