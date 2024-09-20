@@ -15,11 +15,18 @@
     </video>
     
     <!-- Background Music -->
-<audio id="bg-music" autoplay loop>
+<audio id="bg-music" loop>
     <source src="Background.mp3" type="audio/mp3">
     <source src="Background.ogg" type="audio/ogg">
     Your browser does not support the audio element.
 </audio>
+
+<script>
+    window.addEventListener('click', function() {
+        document.getElementById('bg-music').play();
+    });
+</script>
+    
     <!-- Placeholder for the Header -->
     <div id="header-placeholder"></div>
 
