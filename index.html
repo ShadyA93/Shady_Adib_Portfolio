@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shady Adib's Portfolio</title>
-        <!-- Link to the CSS file -->
+    <!-- Link to the CSS file -->
     <link rel="stylesheet" href="css/style.css">
-    
-    
+    <style>
+        /* Add a flex container for the header */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        /* Increase font size for the title */
+        .main-title {
+            font-size: 3.5em; /* Larger font for the name */
+            margin: 0;
+        }
+
+        /* Subline for the role */
+        .role {
+            font-size: 2em; /* Larger font for the role */
+            margin: 0;
+        }
+
+        /* Innovating line */
+        .subheading {
+            font-size: 1.25em; /* Adjusted size for the subheading */
+            margin: 10px 0 20px 0;
+        }
+
+        /* Style for the image */
+        .profile-photo {
+            width: 400px; /* Adjust the size as needed */
+            height: auto;
+            border-radius: 50%; /* Optional: Make the photo circular */
+        }
+
+        /* Ensure the section aligns properly */
+        section {
+            margin-top: 20px;
+        }
+
+        /* Keep hyperlinks at the default or larger font size */
+        ul li a {
+            font-size: 1em; /* Ensure hyperlinks maintain the default font size */
+        }
+    </style>
 </head>
 <body>
     <!-- Background Video -->
@@ -20,13 +62,24 @@
 
     <!-- Introduction Section -->
     <section>
-        <!-- Main Title -->
-        <h1 class="main-title">Shady Adib, PhD Candidate in Civil Engineering</h1>
-        <!-- Subheading -->
-        <h2 class="subheading">Innovating Real-Time Structural Health Monitoring with Digital Twins and Deep Learning</h2>
+        <!-- Header Container -->
+        <div class="header-container">
+            <!-- Textual Content on the Left -->
+            <div class="text-content">
+                <!-- Main Title -->
+                <h1 class="main-title">Shady Adib</h1>
+                <!-- Role on a new line -->
+                <h2 class="role">PhD Candidate in Civil Engineering</h2>
+                <!-- Subheading -->
+                <h3 class="subheading">Innovating Real-Time Structural Health Monitoring with Digital Twins and Deep Learning</h3>
+            </div>
+
+            <!-- Profile Photo on the Right -->
+            <img src="Shady Adib.png" alt="Shady Adib" class="profile-photo">
+        </div>
 
         <p>Welcome to my professional portfolio. I am a PhD candidate in the Civil Engineering department at the University of Newcastle, Newcastle Upon Tyne, UK. My research focuses on leveraging digital technology and data-driven approaches to innovate real-time damage identification in infrastructure.</p>
-<ul>
+        <ul>
             <li><a href="About.html">About Me</a></li>
             <li><a href="Research.html">Research</a></li>
             <li><a href="Methodologies.html">Methodologies</a></li>
