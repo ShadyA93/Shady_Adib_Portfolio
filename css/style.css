@@ -6,11 +6,11 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif; /* Using a serif font to match */
-    color: #faf3e0; /* Darker color to match the title in the image */
+    font-family: 'Times New Roman', Times, serif; 
+    color: #faf3e0; 
     line-height: 1.6;
     position: relative;
-    font-size: 20px; /* Increase base font size for the body text */
+    font-size: 20px; 
     background: transparent;
 }
 
@@ -26,51 +26,70 @@ body {
     background: transparent;
 }
 
-/* Main Title Styling (to match the style in the image) */
+/* Main Title Styling (if used elsewhere) */
 .main-title {
-    font-family: 'Times New Roman', Times, serif; /* Serif font for the title */
-    font-size: 64px; /* Adjust the font size */
-    font-weight: bold; /* Make it bold */
-    text-align: left; /* Left align the text */
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 64px; 
+    font-weight: bold; 
+    text-align: left; 
     margin-top: 50px;
     margin-bottom: 10px;
-    color: #faf3e0;  /* Darker text color like the image */
+    color: #faf3e0; 
 }
 
-/* Subheading Styling (Smaller italic text below the main title) */
+/* Subheading Styling (if used elsewhere) */
 .subheading {
-    font-family: 'Times New Roman', Times, serif; /* Same serif font */
-    font-size: 30px; /* Smaller font size for the subheading */
-    font-style: italic; /* Make the subheading italic */
-    text-align: left; /* Left align */
-    margin-bottom: 30px; /* Adds space after the subheading */
-    color: #faf3e0; /* Match the text color with the main title */
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 30px; 
+    font-style: italic; 
+    text-align: left; 
+    margin-bottom: 30px; 
+    color: #faf3e0; 
 }
 
-/* Paragraph styling with increased text size and spacing */
+/* Research container for all research-related sections */
+.research-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+    color: #faf3e0;
+}
+
+.research-container h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.research-container h2 {
+    font-size: 32px;
+    margin-top: 40px;  /* Adds space before each new subsection */
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
 p {
-    font-size: 24px; /* Increased font size for body text */
+    font-size: 24px; 
     margin-bottom: 25px;
 }
+
 /* List Item Styling */
 li {
-    font-size: 24px; /* Increase the text size of list items */
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 /* Customize bullet size using ::marker */
 li::marker {
-    font-size: 36px; /* Increase only the bullet size */
-    color: #0073e6; /* Optional: Change bullet color */
+    font-size: 36px; 
+    color: #0073e6; 
 }
 
-/* Section styling */
-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    z-index: 1;
-    background: transparent;
+/* Horizontal rule to separate major sections */
+hr {
+    border: none;
+    border-top: 1px solid #faf3e0;
+    margin: 40px 0;
 }
 
 /* Link Styling */
@@ -99,6 +118,7 @@ img {
     margin-top: 10px;
     background: transparent;
 }
+
 /* Mobile and Tablet View */
 @media screen and (max-width: 768px) {
     body {
@@ -123,9 +143,9 @@ img {
         margin-bottom: 20px;
     }
 
-    section {
-        padding: 15px;
+    .research-container {
         width: 100%;
+        padding: 15px;
     }
 
     li {
