@@ -3,57 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>About Dr. Shady Adib</title>
+
+    <meta name="description"
+          content="Learn about Dr. Shady Adib's academic background, research
+          in Self-Generating Digital Twins and structural health monitoring,
+          teaching, and infrastructure entrepreneurship.">
+
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .about-content {
+            line-height: 1.8;
+        }
+
+        .about-content h3 {
+            margin-top: 30px;
+            margin-bottom: 12px;
+        }
+
+        .about-content p {
+            margin-bottom: 18px;
+        }
+
+        .about-content ul {
+            padding-left: 24px;
+        }
+
+        .about-content li {
+            margin-bottom: 10px;
+        }
+
+        .about-content ul ul {
+            margin-top: 8px;
+        }
+
+        .startup-link {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 24px;
+        }
+    </style>
 </head>
+
 <body>
     <!-- Background Video -->
-    <video autoplay muted loop id="bg-video">
+    <video autoplay muted loop playsinline id="bg-video"
+           aria-hidden="true">
         <source src="Untitled (1).mp4" type="video/mp4">
     </video>
-    
-    <section>
-        <h2>About Me</h2>
-        <p>I am Dr. Shady Adib, PhD, AFHEA, a Civil Engineer specialising in Digital Twin technology, AI-driven Structural Health Monitoring, and innovative infrastructure solutions. I completed my doctorate at Newcastle University, Newcastle upon Tyne, UK, where my research focused on integrating advanced machine learning models with Digital Twins for real-time damage detection and infrastructure resilience.</p>
 
-        <p> I am currently a Visiting Researcher at University College London (UCL), UK, where I work on self-generating digital twins and their applications in infrastructure resilience.Alongside this role, I serve as a 
-            part-time Assistant Professor in Civil Engineering at the University of Hertfordshire, hosted by its Global Academic Foundation (GAF) campus in Egypt, where I teach and supervise students on emerging topics in digital transformation of the built environment.
+    <!-- About Section -->
+    <section class="about-content" aria-labelledby="about-title">
+        <h1 id="about-title">About Me</h1>
+
+        <p>
+            I am Dr. Shady Adib, an Associate Fellow of the Higher Education
+            Academy (AFHEA) and a civil engineering researcher specialising
+            in Digital Twins, AI-enabled Structural Health Monitoring,
+            and infrastructure intelligence. I completed my PhD in Civil
+            Engineering at Newcastle University, UK, where I developed
+            a Hybrid Digital Twin approach for real-time structural
+            damage identification.
         </p>
 
-        <p> I am also the Co-Founder &amp; CTO of <a href="Startup.html" style="text-decoration: none; font-weight: bold;">TWINOVUS</a>, a deep-tech infrastructure intelligence startup developing AI-powered Digital Twin systems for resilient and predictive infrastructure. 
-            Through TWINOVUS, I lead the strategic development of modular lifecycle Digital Twin architectures integrating generative AI, physics-informed machine learning, and IoE technologies for real-world infrastructure deployment.
+        <p>
+            My work connects structural engineering, physics-informed
+            modelling, machine learning, and sensing technologies to
+            support reliable assessment and informed decision-making
+            throughout the infrastructure lifecycle. I am particularly
+            interested in how Digital Twins can evolve with physical
+            assets and remain useful as structural behaviour, monitoring
+            conditions, and operational requirements change.
         </p>
 
-        <p>I am also a member and Research Associate at the Africa Center for Digital Transformation (ACDT), where I contribute to developing adaptive, climate-resilient infrastructure systems using Digital Twin frameworks. My work with ACDT involves leveraging generative AI, physics-informed machine learning, and real-time data to support transparent, accountable decision-making in critical infrastructure projects across Africa, with a focus on enhancing bridge resilience in countries such as Nigeria and Ghana. Additionally, I serve as a session lead for the TechForward Policy Fellowship, guiding discussions on Digital Public Infrastructure and ICT Infrastructure in Africa, where I integrate both technical insights and policy perspectives to shape the future of resilient, data-driven systems across the continent.</p>
-        
-        <p>My PhD research focused on the development of the Digital Twin (DT) concept by creating a hybrid DT, which integrates mathematical and data-driven approaches for monitoring and managing the health of structures. By combining the Reduced Basis (RB) method and Deep Learning (DL) technology, my research aimed at detecting abnormal changes in structural behaviour in real-time. This innovative approach addresses model uncertainties and synchronises physical and virtual models using Internet of Things (IoT) technology.</p>
-        
-        <p>Before my PhD, I completed a master’s degree in Structural Engineering (2017-2019) at Vilnius Gediminas Technical University, Vilnius, Lithuania, with a focus on structural analysis, design, and the application of high-strength steel cold-formed tubular beams. I also hold a bachelor’s degree in Civil Engineering (2012-2017) from the German University in Cairo, Cairo, Egypt, where I concentrated on comparing reinforced concrete and steel structures.</p>
-        
-        <h3>Education:</h3>
-        <ul style="list-style-position: inside; margin-left: 2cm;">
-            <li><strong>PhD, Civil Engineering</strong> - Newcastle University, UK (2019-2024)</li>
-            <li><strong>MSc, Structural Engineering</strong> - Vilnius Gediminas Technical University, Lithuania (2017-2019)</li>
-            <li><strong>BSc, Civil Engineering</strong> - German University in Cairo, Egypt (2012-2017)</li>
+        <h3>Academic Appointments</h3>
+
+        <p>
+            I serve as an Assistant Professor in Civil Engineering at
+            the University of Hertfordshire, hosted by its Global Academic
+            Foundation (GAF) campus in Egypt. I also hold a Visiting Lecturer
+            appointment at the University of Hertfordshire in Hatfield, UK.
+            My teaching and supervision connect structural engineering
+            principles with digital technologies, sustainability, and
+            practical engineering design.
+        </p>
+
+        <p>
+            I am undertaking the I-X Global
+            Early-Career AI Fellowship at Imperial College London as a
+            Visiting Researcher in the Department of Civil and Environmental
+            Engineering, working with Dr. Christian Málaga-Chuquitaype.
+            My fellowship project investigates AI-enabled reconstruction
+            of incomplete structural monitoring data for Self-Generating
+            Digital Twins, aiming to support reliable operation under
+            sensor outages and missing measurements.
+        </p>
+
+        <p>
+            My research experience also includes work as a Visiting
+            Researcher at University College London (UCL), UK, on
+            Self-Generating Digital Twins and their applications
+            in infrastructure resilience.
+        </p>
+
+        <h3>Research: From Hybrid to Self-Generating Digital Twins</h3>
+
+        <p>
+            My doctoral research developed a Hybrid Digital Twin that
+            integrates mathematical and data-driven approaches to monitor
+            structural behaviour and identify abnormal changes in real
+            time. The framework combines the Reduced Basis (RB) method
+            with Deep Learning (DL), addresses model uncertainties,
+            and uses Internet of Things (IoT) technologies to synchronise
+            physical measurements with virtual models.
+        </p>
+
+        <p>
+            Building on this foundation, my current research explores
+            Self-Generating Digital Twins: systems designed to adapt
+            their models and representations as available data,
+            monitoring configurations, and structural conditions evolve.
+            While hybrid modelling concerns the integration of
+            physics-based and data-driven methods, self-generation
+            concerns how a Digital Twin creates, updates, and adapts
+            its representation. Hybrid methods can therefore form
+            part of a Self-Generating Digital Twin.
+        </p>
+
+        <p>
+            My current work focuses on missing-data reconstruction,
+            virtual sensing, and uncertainty-aware structural-state
+            estimation. I investigate how machine-learning methods
+            compare with conventional reconstruction approaches across
+            different patterns of data loss, and how reconstructed
+            measurements affect subsequent Digital Twin predictions.
+            A central research question is whether the surviving
+            sensors retain sufficient information to support reliable
+            inference about structural behaviour.
+        </p>
+
+        <p>
+            My longer-term aim is to develop adaptive Digital Twins
+            that support infrastructure maintenance, repair, reuse,
+            and resilience through reliable lifecycle intelligence.
+            This includes understanding when predictions can be relied
+            upon, when uncertainty increases, and when additional
+            measurements or model revisions are required.
+        </p>
+
+        <h3>Entrepreneurship and Innovation</h3>
+
+        <p>
+            I am the Co-Founder &amp; CTO of
+            <a href="Startup.html" class="startup-link">TWINOVUS</a>,
+            a deep-tech infrastructure intelligence startup developing
+            AI-powered Digital Twin systems for resilient and predictive
+            infrastructure. I lead the technical development of modular
+            lifecycle Digital Twin architectures, bringing together
+            AI, physics-informed machine learning, and connected
+            sensing technologies.
+        </p>
+
+        <p>
+            Through TWINOVUS, I aim to translate research into practical
+            engineering tools that help infrastructure owners and
+            operators interpret monitoring data, assess asset condition,
+            and make informed maintenance and operational decisions.
+        </p>
+
+        <h3>Teaching and Supervision</h3>
+
+        <p>
+            My teaching experience includes computational engineering
+            analysis, structural analysis, digital tools, sustainable
+            engineering, and industry-focused group design projects.
+            I encourage students to connect theoretical understanding
+            with practical implementation and to critically evaluate
+            the capabilities and limitations of digital engineering
+            methods.
+        </p>
+
+        <p>
+            I have supervised undergraduate projects on AI-based crack
+            detection, low-cost IoT systems for Structural Health
+            Monitoring, and the integration of Digital Twins with
+            Building Information Modelling (BIM). My approach emphasises
+            problem-solving, clear technical communication, and the
+            responsible application of emerging technologies to
+            engineering challenges.
+        </p>
+
+        <h3>Research Collaboration and Policy Engagement</h3>
+
+        <p>
+            My wider engagement includes serving as a member and Research
+            Associate at the Africa Center for Digital Transformation
+            (ACDT), contributing to work on adaptive, climate-resilient
+            infrastructure using Digital Twin frameworks. This work
+            explores how generative AI, physics-informed machine learning,
+            and real-time data can support transparent and accountable
+            infrastructure decision-making, including bridge resilience
+            in Nigeria and Ghana.
+        </p>
+
+        <p>
+            My policy engagement also includes serving as a session lead
+            for the TechForward Policy Fellowship, guiding discussions
+            on Digital Public Infrastructure and ICT infrastructure
+            in Africa. This brings technical research into dialogue
+            with the institutional and policy considerations that
+            influence infrastructure development.
+        </p>
+
+        <h3>Education</h3>
+
+        <ul>
+            <li>
+                <strong>PhD in Civil Engineering</strong><br>
+                Newcastle University, UK (2019–2024)<br>
+                Research: Development of a Digital Twin concept for
+                real-time structural damage identification.
+            </li>
+
+            <li>
+                <strong>MSc in Structural Engineering</strong><br>
+                Vilnius Gediminas Technical University, Lithuania
+                (2017–2019)<br>
+                Research focus: Structural analysis and design of
+                high-strength steel cold-formed tubular beams.
+            </li>
+
+            <li>
+                <strong>BSc in Civil Engineering</strong><br>
+                German University in Cairo, Egypt (2012–2017)<br>
+                Project focus: Comparison of reinforced concrete
+                and steel structures.
+            </li>
         </ul>
 
-        <h3>Supervisors:</h3>
-        <ul style="list-style-position: inside; margin-left: 2cm;">
-            <li><strong>PhD Supervisors:</strong>
-                <ul>
-                    <li><strong>Dr. Vladimir Vinogradov</strong> - Newcastle University</li>
-                    <li><strong>Prof. Peter Gosling</strong> - Newcastle University</li>
-                </ul>
-            </li>
-            <li><strong>Master's Supervisor:</strong>
-                <ul>
-                    <li><strong>Dr. Ieva Misiuniate</strong> - Vilnius Gediminas Technical University</li>
-                </ul>
-            </li>
-        </ul>
         
+
         <!-- Back to Home Link -->
-        <a href="index.html">Back to Home</a>
+        <a href="index.html" class="back-link">Back to Home</a>
     </section>
 </body>
 </html>
