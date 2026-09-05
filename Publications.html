@@ -3,53 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications | Shady Adib</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-   <!-- Background Video -->
-    <video autoplay muted loop id="bg-video">
-    <source src="Untitled (1).mp4" type="video/mp4">
-    </video>
-    <!-- Publications Section -->
-    <section>
-        <h1>Publications</h1>
 
-        <h2>Peer-Reviewed Articles</h2>
-        <ul>
-            <li><strong>Adib, S.</strong> et al. "A Hybrid Digital Twin Framework for Real-Time Structural Damage Identification Using Physics-Based Models and Deep Learning," <em>Computer and Structures</em>, under review.</li>
-            <li><strong>Adib, S.</strong> et al. "Advancing Structural Health Monitoring: Accurate PCB Design for IoT-Based Real-Time Damage Detection with Digital Twin Integration," <em>Sensors MDPI</em>, under review.</li>
+    <title>Publications | Shady Adib</title>
+
+    <meta name="description"
+          content="Publications, accepted book chapters, conference papers,
+          and manuscripts under review by Dr. Shady Adib in Digital Twins,
+          structural health monitoring, and AI-enabled civil engineering.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .publications-content {
+            line-height: 1.8;
+        }
+
+        .publications-content h2 {
+            margin-top: 32px;
+            margin-bottom: 14px;
+        }
+
+        .publication-list {
+            padding-left: 24px;
+        }
+
+        .publication-list li {
+            margin-bottom: 22px;
+        }
+
+        .publication-list a {
+            overflow-wrap: anywhere;
+        }
+
+        .publication-status {
+            font-weight: bold;
+        }
+
+        .publication-award {
+            display: block;
+            margin-top: 6px;
+            font-weight: bold;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline id="bg-video"
+           aria-hidden="true">
+        <source src="Untitled (1).mp4" type="video/mp4">
+    </video>
+
+    <!-- Publications Section -->
+    <section class="publications-content"
+             aria-labelledby="publications-title">
+
+        <h1 id="publications-title">Publications</h1>
+
+        <h2>Peer-Reviewed Journal Articles</h2>
+
+        <ul class="publication-list">
+            <li>
+                <strong>Adib, S.</strong> et al.
+                “Advancing Structural Health Monitoring: Accurate PCB
+                Design for IoT-Based Real-Time Damage Detection with
+                Digital Twin Integration.”
+                <em>Sensors</em>, 2026.
+                <br>
+                DOI:
+                <a href="https://doi.org/10.3390/s26051672"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    10.3390/s26051672
+                </a>.
+            </li>
+        </ul>
+
+        <h2>Accepted Book Chapters</h2>
+
+        <ul class="publication-list">
+            <li>
+                <strong>Adib, S.</strong> et al.
+                “Human-Centric and Physics-Informed Self-Generating
+                Digital Twin Framework.”
+                Book chapter, Emerald.
+                <span class="publication-status">Accepted.</span>
+            </li>
         </ul>
 
         <h2>Conference Papers</h2>
-        <ul>
-            <li><strong>Adib, S., Misiunaite, I.</strong> "High Strength Steel Cold-Formed Hollow Sections: Implication of Cross-Section Aspect Ratio and Slenderness Characteristics on Flexural Behavior," <em>13th International Conference on Modern Building Materials, Structures and Techniques</em>, 2019, pp. 230-237, DOI: <a href="https://doi.org/10.3846/mbmst.2019.066" target="_blank">10.3846/mbmst.2019.066</a>.</li>
-            <li><strong>Adib, S., Vinogradov, V., Gosling, P.</strong> "Development of Digital Twin Concept for Real-Time Detection of Abnormal Changes in Structural Behaviour," <em>8th International Conference on Civil Structural and Transportation Engineering (ICCSTE'23)</em>, 2023, pp. 206-1 to 206-8, DOI: <a href="https://doi.org/10.11159/iccste23.206" target="_blank">10.11159/iccste23.206</a>.</li>
-            <li><strong>Adib, S., Vinogradov, V., Gosling, P.</strong> "Real-Time Damage Identification of Abnormal Changes in Structural Behaviour Using Digital Twin and IoT Technologies," <em>In 2023 IEEE Smart World Congress (SWC)</em>, pp. 1-2, DOI: <a href="https://doi.org/10.1109/SWC57546.2023.10448986" target="_blank">10.1109/SWC57546.2023.10448986</a>.</li>
+
+        <ul class="publication-list">
+            <li>
+                <strong>Adib, S., Vinogradov, V., Gosling, P.</strong>
+                “Development of Digital Twin Concept for Real-Time
+                Detection of Abnormal Changes in Structural Behaviour.”
+                <em>
+                    8th International Conference on Civil Structural
+                    and Transportation Engineering (ICCSTE)
+                </em>,
+                2023, pp. 206-1–206-8.
+                <br>
+                DOI:
+                <a href="https://doi.org/10.11159/iccste23.206"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    10.11159/iccste23.206
+                </a>.
+                <span class="publication-award">Best Paper Award</span>
+            </li>
+
+            <li>
+                <strong>Adib, S., Vinogradov, V., Gosling, P.</strong>
+                “Real-Time Damage Identification of Abnormal Changes
+                in Structural Behaviour Using Digital Twin and IoT
+                Technologies.”
+                <em>IEEE Smart World Congress (SWC)</em>,
+                2023, pp. 1–2.
+                <br>
+                DOI:
+                <a href="https://doi.org/10.1109/SWC57546.2023.10448986"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    10.1109/SWC57546.2023.10448986
+                </a>.
+            </li>
+
+            <li>
+                <strong>Adib, S., Misiunaite, I.</strong>
+                “High Strength Steel Cold-Formed Hollow Sections:
+                Implication of Cross-Section Aspect Ratio and
+                Slenderness Characteristics on Flexural Behavior.”
+                <em>
+                    13th International Conference on Modern Building
+                    Materials, Structures and Techniques
+                </em>,
+                2019, pp. 230–237.
+                <br>
+                DOI:
+                <a href="https://doi.org/10.3846/mbmst.2019.066"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    10.3846/mbmst.2019.066
+                </a>.
+            </li>
         </ul>
 
-        <h2>Professional Bloggings</h2>
-        <ul>
-            <li><strong>Adib, S.</strong> "Real-Time Structural Damage Identification: The Future with Digital Twins," TechUK’s Digital Twin Campaign, Oct 2023. [Online]. Available: <a href="https://www.techuk.org/resource/real-time-structural-damage-identification-the-future-with-digital-twins.html" target="_blank">URL</a>.</li>
+        <h2>Manuscripts Under Review</h2>
+
+        <ul class="publication-list">
+            <li>
+                <strong>Adib, S.</strong> et al.
+                “A Hybrid Digital Twin Framework for Real-Time
+                Structural Damage Identification Using Physics-Based
+                Models and Deep Learning.”
+                <em>Structures</em>.
+                <span class="publication-status">Under review.</span>
+                <br>
+                Preprint:
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5240191"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Read on SSRN
+                </a>.
+            </li>
+
+            <li>
+                <strong>Adib, S.</strong> et al.
+                “Member-Scale Severity Assessment of Steel Hollow
+                Section Beams: A Digital-Twin-Oriented Framework
+                Combining Finite-Element and Experimental Data.”
+                <em>Advances in Civil Engineering</em>.
+                <span class="publication-status">Under review.</span>
+            </li>
+
+            <li>
+                <strong>Adib, S.</strong> et al.
+                “A Diagnostic Digital Twin for Code-Compliant Crack
+                Detection and Severity Evaluation of Reinforced
+                Concrete Beams Using a Two-Stage AI Pipeline.”
+                <em>Advances in Civil Engineering</em>.
+                <span class="publication-status">Under review.</span>
+            </li>
+        </ul>
+
+        <h2>Professional Articles and Blogs</h2>
+
+        <ul class="publication-list">
+            <li>
+                <strong>Adib, S.</strong>
+                “Real-Time Structural Damage Identification:
+                The Future with Digital Twins.”
+                <em>techUK Digital Twin Campaign</em>, October 2023.
+                <br>
+                <a href="https://www.techuk.org/resource/real-time-structural-damage-identification-the-future-with-digital-twins.html"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Read the article on techUK
+                </a>.
+            </li>
         </ul>
 
         <h2>Workshops and Seminars</h2>
-        <ul>
-            <li>"Showcase Innovation Day at Newcastle University Business School," where I led the presentation on the development of a cost-effective PCB board for an accurate IoT platform integrated with a Digital Twin model.</li>
-            <li>Team leader for a group of five in the online course "Digital Twins: Enhancing Model-based Design with AR, VR and MR," organised by the Department for Continuous Education at the University of Oxford. The coursework involved reading and extracting a case study from a paper on the application of DTs in research, 2023.</li>
-            <li>Attended various workshops as part of my PhD study in Civil Engineering at Newcastle University, which significantly expanded my knowledge in areas including statistical design of experiments, scientific writing, presentation skills, programming with R, and introduction to the Internet of Things, enhancing my research and professional capabilities.</li>
+
+        <ul class="publication-list">
+            <li>
+                <strong>
+                    Showcase Innovation Day — Newcastle University
+                    Business School
+                </strong>
+                <br>
+                Led a presentation on the development of a cost-effective
+                printed circuit board for an accurate IoT monitoring
+                platform integrated with a Digital Twin model.
+            </li>
+
+            <li>
+                <strong>
+                    Digital Twins: Enhancing Model-Based Design
+                    with AR, VR and MR — University of Oxford
+                </strong>
+                <br>
+                Led a team of five during an online course organised
+                by the Department for Continuing Education.
+                The group analysed a research case study on the
+                application of Digital Twins.
+            </li>
+
+            <li>
+                <strong>
+                    Doctoral Research Training — Newcastle University
+                </strong>
+                <br>
+                Participated in workshops on statistical design of
+                experiments, scientific writing, presentation skills,
+                programming with R, and the Internet of Things.
+            </li>
         </ul>
-        <h2>Invited Talks & Keynotes</h2>
+
+        <h2>Talks and Presentations</h2>
+
         <p>
-            A curated selection of invited talks, tutorials, and keynote-style sessions delivered at international conferences, webinars, and professional forums. Video recordings are hosted on the official channels of the organising institutions.
+            Selected talks and presentations on Digital Twins,
+            structural health monitoring, and infrastructure
+            intelligence are available through the playlist below.
         </p>
+
         <p>
-            ▶ <a href="https://youtube.com/playlist?list=PLIgiraKweJC8x4N42MQOQAakLSMuOcZID&si=SoqbAiAvhYQPwATs" target="_blank">
-            View Invited Talks & Keynotes on My YouTube Channel
+            <a href="https://youtube.com/playlist?list=PLIgiraKweJC8x4N42MQOQAakLSMuOcZID&amp;si=SoqbAiAvhYQPwATs"
+               target="_blank"
+               rel="noopener noreferrer">
+                Watch Talks and Presentations on YouTube
             </a>
         </p>
+
         <!-- Back to Home Link -->
-        <a href="index.html">Back to Home</a>
+        <a href="index.html" class="back-link">Back to Home</a>
+    </section>
+</body>
+</html>
     </section>
 
 </body>
