@@ -3,92 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shady Adib's Portfolio</title>
-    <!-- Link to the CSS file -->
+
+    <title>Shady Adib | Civil Engineering &amp; Digital Twins</title>
+
+    <meta name="description"
+          content="Dr Shady Adib — Assistant Professor in Civil Engineering,
+          Imperial I-X Global Early-Career AI Fellow, and Co-Founder of TWINOVUS.
+          Research in Self-Generating Digital Twins, structural health monitoring,
+          and AI-enabled infrastructure intelligence.">
+
     <link rel="stylesheet" href="css/style.css">
+
     <style>
-        /* Add a flex container for the header */
+        /* Introduction layout */
         .header-container {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 40px;
             margin: 20px;
         }
 
-        /* Increase font size for the title */
+        .text-content {
+            flex: 1;
+            min-width: 0;
+        }
+
         .main-title {
-            font-size: 3.5em; /* Larger font for the name */
-            margin: 0;
+            font-size: 3.5em;
+            margin: 0 0 12px;
         }
 
-        /* Subline for the role */
         .role {
-            font-size: 2em; /* Larger font for the role */
+            font-size: 2em;
+            line-height: 1.3;
             margin: 0;
         }
 
-        /* Innovating line */
+        /* Additional academic appointments */
+        .additional-roles {
+            font-size: 1.1em;
+            line-height: 1.7;
+            margin: 18px 0;
+        }
+
+        .additional-roles span {
+            display: block;
+            margin-bottom: 6px;
+        }
+
         .subheading {
-            font-size: 1.25em; /* Adjusted size for the subheading */
-            margin: 10px 0 20px 0;
+            font-size: 1.25em;
+            font-weight: 500;
+            line-height: 1.5;
+            margin: 18px 0 20px;
         }
 
-        /* Style for the image */
         .profile-photo {
-            width: 400px; /* Adjust the size as needed */
+            width: 400px;
+            max-width: 40%;
             height: auto;
-            border-radius: 50%; /* Optional: Make the photo circular */
+            border-radius: 50%;
+            flex-shrink: 0;
         }
 
-        /* Ensure the section aligns properly */
         section {
             margin-top: 20px;
         }
 
-        /* Keep hyperlinks at the default or larger font size */
+        .introduction {
+            line-height: 1.8;
+        }
+
+        .introduction p {
+            margin-bottom: 18px;
+        }
+
+        .startup-link {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
         ul li a {
-            font-size: 1em; /* Ensure hyperlinks maintain the default font size */
+            font-size: 1em;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 900px) {
+            .header-container {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 24px;
+            }
+
+            .profile-photo {
+                width: 300px;
+                max-width: 100%;
+                align-self: center;
+            }
+
+            .main-title {
+                font-size: 2.75em;
+            }
+
+            .role {
+                font-size: 1.6em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-container {
+                margin: 12px 0;
+            }
+
+            .main-title {
+                font-size: 2.25em;
+            }
+
+            .role {
+                font-size: 1.35em;
+            }
+
+            .additional-roles,
+            .subheading {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
+
 <body>
     <!-- Background Video -->
-    <video autoplay muted loop id="bg-video">
+    <video autoplay muted loop playsinline id="bg-video"
+           aria-hidden="true">
         <source src="Untitled (1).mp4" type="video/mp4">
-    </video>   
-    
+    </video>
+
     <!-- Placeholder for the Header -->
     <div id="header-placeholder"></div>
 
     <!-- Introduction Section -->
-    <section>
-      <!-- Header Container -->
-      <div class="header-container">
-      <!-- Textual Content on the Left -->
-        <div class="text-content">
-            <!-- Main Title -->
-            <h1 class="main-title">Shady Adib</h1>
-            <!-- Role on a new line -->
-            <h2 class="role">Assistant Professor in Civil Engineering</h2>
-            <!-- Subheading -->
-            <h3 class="subheading">Innovating Real-Time Structural Health Monitoring with Digital Twins and Deep Learning</h3>
+    <section aria-labelledby="portfolio-title">
+        <div class="header-container">
+            <div class="text-content">
+                <h1 id="portfolio-title" class="main-title">Shady Adib</h1>
+
+                <h2 class="role">
+                    Assistant Professor in Civil Engineering
+                </h2>
+
+                <div class="additional-roles">
+                    <span>
+                        <strong>I-X Global Early-Career AI Fellow</strong>
+                        | Imperial College London
+                    </span>
+                    <span>
+                        <strong>Visiting Lecturer</strong>
+                        | University of Hertfordshire, UK
+                    </span>
+                    <span>
+                        <strong>Co-Founder &amp; CTO</strong>
+                        | TWINOVUS
+                    </span>
+                </div>
+
+                <p class="subheading">
+                    Advancing Self-Generating Digital Twins and AI-Enabled
+                    Structural Health Monitoring for Resilient and
+                    Sustainable Infrastructure
+                </p>
+            </div>
+
+            <img src="Shady Adib.png"
+                 alt="Portrait of Dr Shady Adib"
+                 class="profile-photo">
         </div>
 
-    <!-- Profile Photo on the Right -->
-    <img src="Shady Adib.png" alt="Shady Adib" class="profile-photo">
-    </div>
+        <div class="introduction">
+            <p>
+                Welcome to my professional portfolio. I hold a PhD in Civil
+                Engineering from Newcastle University, UK, and serve as an
+                Assistant Professor in Civil Engineering at the University
+                of Hertfordshire, hosted by its Global Academic Foundation
+                (UH-GAF) campus in Egypt. I also hold a Visiting Lecturer
+                appointment at the University of Hertfordshire in Hatfield, UK.
+            </p>
 
-      <p> Welcome to my professional portfolio. I hold a PhD in Civil Engineering from Newcastle University, UK, and serve as an Assistant Professor in Civil Engineering at the University of Hertfordshire, hosted by its Global Academic Foundation (UH-GAF) campus in Egypt. I am also the Co-Founder &amp; CTO of <a href="Startup.html" style="text-decoration: none; font-weight: bold;">TWINOVUS</a>, a deep-tech startup developing AI-powered Digital Twin systems for resilient and predictive infrastructure.</p>
-        <ul>
-            <li><a href="About.html">About Me</a></li>
-            <li><a href="Research.html">Research</a></li>
-            <li><a href="Methodologies.html">Methodologies</a></li>
-            <li><a href="Publications.html">Publications</a></li>
-            <li><a href="Startup.html">Business & Startup (TWINOVUS)</a></li>
-            <li><a href="PDP.html">Personal Development Plan (2026-2027)</a></li>
-            <li><a href="CV.html">CV</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
+            <p>
+                I am an I-X Global Early-Career AI Fellow and Visiting
+                Researcher at Imperial College London, working within the
+                Department of Civil and Environmental Engineering. My
+                fellowship research investigates AI-enabled reconstruction
+                of incomplete structural monitoring data to support reliable
+                Digital Twin operation under sensor outages and changing
+                monitoring conditions.
+            </p>
+
+            <p>
+                My research brings together structural engineering,
+                physics-informed modelling, machine learning, and real-time
+                sensing to advance Self-Generating Digital Twins:
+                adaptive systems designed to evolve with the structures
+                they represent. I focus on structural damage identification,
+                virtual sensing, uncertainty-aware state reconstruction,
+                and lifecycle intelligence to support infrastructure
+                maintenance, reuse, repair, and resilience.
+            </p>
+
+            <p>
+                Alongside my academic work, I am the Co-Founder &amp; CTO of
+                <a href="Startup.html" class="startup-link">TWINOVUS</a>,
+                a deep-tech startup developing AI-powered Digital Twin
+                systems for resilient and predictive infrastructure.
+                My work connects research, teaching, and entrepreneurship
+                to translate advances in infrastructure intelligence
+                into practical engineering solutions.
+            </p>
+        </div>
+
+        <nav aria-label="Explore my portfolio">
+            <ul>
+                <li><a href="About.html">About Me</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Methodologies.html">Methodologies</a></li>
+                <li><a href="Publications.html">Publications</a></li>
+                <li>
+                    <a href="Startup.html">
+                        Business &amp; Startup (TWINOVUS)
+                    </a>
+                </li>
+                <li>
+                    <a href="PDP.html">
+                        Personal Development Plan (2026–2027)
+                    </a>
+                </li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </section>
 </body>
 </html>
